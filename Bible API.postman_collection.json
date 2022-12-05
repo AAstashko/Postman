@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "bf8be271-1b15-47cf-896f-c32d9c2b3ead",
+		"_postman_id": "601754fe-b477-4157-9dd3-265a69754c42",
 		"name": "Bible API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24515677"
@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"AlexAst\",\r\n  \"email\": \"AlexAst@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
+							"raw": "{\r\n  \"name\": \"AlexAst1\",\r\n  \"email\": \"AlexAst1@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -48,7 +48,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDoyMTo1OSBHTVQrMDAwMC42MzhkYzFjN2M4ZDM2NDAwMjRiMjY5ZTQiLCJpYXQiOjE2NzAyMzU3MTl9.QOl01kUaYuIxXCViQwhRDDuVRIB4Ieww_EHj2t3rb_4",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
 									"type": "string"
 								}
 							]
@@ -72,7 +72,7 @@
 							"variable": [
 								{
 									"key": "email",
-									"value": "AlexAst@gmail.com"
+									"value": "AlexAst1@gmail.com"
 								}
 							]
 						}
@@ -119,7 +119,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"AlexAst@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"raw": "{\r\n  \"email\": \"AlexAst1@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -161,7 +161,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"AlexAst@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"raw": "{\r\n  \"email\": \"AlexAst1@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -184,8 +184,42 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Resend User password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/password/:email",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								"password",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "AlexAst1@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
+		},
+		{
+			"name": "New Folder",
+			"item": []
 		}
 	]
 }
