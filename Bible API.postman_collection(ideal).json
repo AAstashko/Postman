@@ -7,254 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "Actions with user",
-			"item": [
-				{
-					"name": "Create User",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"AlexAst2\",\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/users",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"users"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get User",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/users/:email",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"users",
-								":email"
-							],
-							"variable": [
-								{
-									"key": "email",
-									"value": "AlexAst2@gmail.com"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "User Statistic",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/users/stats",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"users",
-								"stats"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Change token",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/users/token",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"users",
-								"token"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/users",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"users"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Resend User password",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/users/password/:email",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"users",
-								"password",
-								":email"
-							],
-							"variable": [
-								{
-									"key": "email",
-									"value": "AlexAst2@gmail.com"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Versions",
-			"item": [
-				{
-					"name": "Bible versions, amount of verses",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://www.abibliadigital.com.br/api/versions",
-							"protocol": "https",
-							"host": [
-								"www",
-								"abibliadigital",
-								"com",
-								"br"
-							],
-							"path": [
-								"api",
-								"versions"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Books",
 			"item": [
 				{
@@ -344,17 +96,46 @@
 					"script": {
 						"type": "text/javascript",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
-							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text(author)).to.include(\"string_you_want_to_search\");",
-							"});",
-							"});"
+							""
 						]
 					}
+				}
+			]
+		},
+		{
+			"name": "Versions",
+			"item": [
+				{
+					"name": "Bible versions, amount of verses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/versions",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"versions"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -669,6 +450,217 @@
 								{
 									"key": "range",
 									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actions with user",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"AlexAst2\",\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/:email",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "AlexAst2@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Statistic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/stats",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/token",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resend User password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/password/:email",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								"password",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "AlexAst2@gmail.com"
 								}
 							]
 						}
