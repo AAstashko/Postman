@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "bf8be271-1b15-47cf-896f-c32d9c2b3ead",
+		"name": "Bible API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24515677"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"AlexAst\",\r\n  \"email\": \"AlexAst@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDoyMTo1OSBHTVQrMDAwMC42MzhkYzFjN2M4ZDM2NDAwMjRiMjY5ZTQiLCJpYXQiOjE2NzAyMzU3MTl9.QOl01kUaYuIxXCViQwhRDDuVRIB4Ieww_EHj2t3rb_4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/:email",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								":email"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "AlexAst@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Statistic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDoyNjozNCBHTVQrMDAwMC5BbGV4QXN0QGdtYWlsLmNvbSIsImlhdCI6MTY3MDIzNTk5NH0.1AgdhM9XcGO_dgNAqYSriJEmfwzTN8_nQlx4-ZjOFW8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/stats",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"AlexAst@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users/token",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDoyNjozNCBHTVQrMDAwMC5BbGV4QXN0QGdtYWlsLmNvbSIsImlhdCI6MTY3MDIzNTk5NH0.1AgdhM9XcGO_dgNAqYSriJEmfwzTN8_nQlx4-ZjOFW8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"AlexAst@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/users",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
