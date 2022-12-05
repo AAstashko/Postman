@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "Users",
+			"name": "User manipulations",
 			"item": [
 				{
 					"name": "Create User",
@@ -218,8 +218,352 @@
 			]
 		},
 		{
-			"name": "New Folder",
-			"item": []
+			"name": "Versions",
+			"item": [
+				{
+					"name": "Bible versions, amount of verses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/versions",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"versions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "List of books",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/books",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Choose a book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/books/:abbrev",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"books",
+								":abbrev"
+							],
+							"variable": [
+								{
+									"key": "abbrev",
+									"value": "ex"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Verses",
+			"item": [
+				{
+					"name": "Chapter details and all verses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"verses",
+								":version",
+								":abbrev",
+								":chapter"
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "nvi"
+								},
+								{
+									"key": "abbrev",
+									"value": "dt"
+								},
+								{
+									"key": "chapter",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verse from a chapter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/verses/:version/:abbrev/:chapter/:number",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"verses",
+								":version",
+								":abbrev",
+								":chapter",
+								":number"
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "nvi"
+								},
+								{
+									"key": "abbrev",
+									"value": "dt"
+								},
+								{
+									"key": "chapter",
+									"value": "3"
+								},
+								{
+									"key": "number",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random verse from version",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/verses/:version/random",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"verses",
+								":version",
+								"random"
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "acf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random verse from a book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/verses/:version/:abbrev/random",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"verses",
+								":version",
+								":abbrev",
+								"random"
+							],
+							"variable": [
+								{
+									"key": "version",
+									"value": "kjv"
+								},
+								{
+									"key": "abbrev",
+									"value": "nm"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verses with searched word",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"version\": \"nvi\",\r\n  \"search\": \"dentre\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/verses/search",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"verses",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
