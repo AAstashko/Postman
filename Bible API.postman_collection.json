@@ -1,13 +1,13 @@
 {
 	"info": {
 		"_postman_id": "601754fe-b477-4157-9dd3-265a69754c42",
-		"name": "Bible API",
+		"name": "Bible API (ideal)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24515677"
 	},
 	"item": [
 		{
-			"name": "User manipulations",
+			"name": "Actions with user",
 			"item": [
 				{
 					"name": "Create User",
@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"AlexAst1\",\r\n  \"email\": \"AlexAst1@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
+							"raw": "{\r\n  \"name\": \"AlexAst2\",\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\",\r\n  \"notifications\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -48,7 +48,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -72,7 +72,7 @@
 							"variable": [
 								{
 									"key": "email",
-									"value": "AlexAst1@gmail.com"
+									"value": "AlexAst2@gmail.com"
 								}
 							]
 						}
@@ -87,7 +87,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDoyNjozNCBHTVQrMDAwMC5BbGV4QXN0QGdtYWlsLmNvbSIsImlhdCI6MTY3MDIzNTk5NH0.1AgdhM9XcGO_dgNAqYSriJEmfwzTN8_nQlx4-ZjOFW8",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -119,7 +119,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"AlexAst1@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"raw": "{\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -152,7 +152,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDoyNjozNCBHTVQrMDAwMC5BbGV4QXN0QGdtYWlsLmNvbSIsImlhdCI6MTY3MDIzNTk5NH0.1AgdhM9XcGO_dgNAqYSriJEmfwzTN8_nQlx4-ZjOFW8",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -161,7 +161,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"AlexAst1@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
+							"raw": "{\r\n  \"email\": \"AlexAst2@gmail.com\",\r\n  \"password\": \"5331\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -208,7 +208,7 @@
 							"variable": [
 								{
 									"key": "email",
-									"value": "AlexAst1@gmail.com"
+									"value": "AlexAst2@gmail.com"
 								}
 							]
 						}
@@ -228,7 +228,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -265,7 +265,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -297,7 +297,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -328,6 +328,34 @@
 					},
 					"response": []
 				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text(author)).to.include(\"string_you_want_to_search\");",
+							"});",
+							"});"
+						]
+					}
+				}
 			]
 		},
 		{
@@ -341,7 +369,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -390,7 +418,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -444,7 +472,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -484,7 +512,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -529,7 +557,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxMDo1NTo1NyBHTVQrMDAwMC5BbGV4QXN0MUBnbWFpbC5jb20iLCJpYXQiOjE2NzAyMzc3NTd9.0bxQy7lCUiXJIpwPlmYMyP-W74dPWnI0neweXNO6eug",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -564,6 +592,96 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Requests",
+			"item": [
+				{
+					"name": "Requests latest by date",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/requests/:range",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"requests",
+								":range"
+							],
+							"variable": [
+								{
+									"key": "range",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Requests total and each",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.abibliadigital.com.br/api/requests/amount/:range",
+							"protocol": "https",
+							"host": [
+								"www",
+								"abibliadigital",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"requests",
+								"amount",
+								":range"
+							],
+							"variable": [
+								{
+									"key": "range",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik1vbiBEZWMgMDUgMjAyMiAxNDoyODo0MSBHTVQrMDAwMC5BbGV4QXN0MkBnbWFpbC5jb20iLCJpYXQiOjE2NzAyNTA1MjF9.b3E5a6pHV5ybPhfO8peR6751_EwwEtqp7sOVwGMiUr4"
 		}
 	]
 }
